@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết tin tức</title>
+</head>
+
+<body>
+
+    {% if article %}
+
+    <h1>{{ article.title }}</h1>
+
+    <p>{{ article.content }}</p>
+
+    {% else %}
+
+    <h2>Không tìm thấy bài viết</h2>
+
+    {% endif %}
+
+    <a href="/">Quay lại trang chủ</a>
+
+</body>
+
+</html>
